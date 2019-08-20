@@ -1,18 +1,26 @@
+/* Ejercicios básicos de programación N°2
+ * Ejercicio número 2
+ * Programa que calcula el area sombreada que está entre un cuadrado inscrito en un circulo de radio r
+ * Integrantes:
+ * Andres Sneider Jimenez Garcia
+ * Harold Felipe Zuluaga Grisales
+ * Manuel leonardo Ayala Ayala 
+*/
+
 import java.util.Scanner;
 public class Areas 
 {
-    private static Scanner entrada;
-	
-	public static void main(String[] args)
+    public static void main(String[] args)
 	{
-	   entrada = new Scanner(System.in);
+	   Scanner sc = new Scanner(System.in);
 	   double radio;
 	   double ladoc;
 	   double aCirculo;
 	   double aCuadrado;
 	   double aSombra;
 	   System.out.println("Digite el valor del radio");
-	   radio = entrada.nextDouble();
+	   radio = sc.nextDouble();
+	   sc.close();
 	   
 	   /* El area sombreada corresponde a la resta del area de la circunferencia menos el area del cuadrado
 	    * area circunferencia = Pi * r^2
